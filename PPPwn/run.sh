@@ -54,13 +54,13 @@ arch=$(getconf LONG_BIT)
 if [ $arch -eq 32 ] && [ $CPPBIN = "pppwn64" ] && [[ ! $PITYP == *"Raspberry Pi 4"* ]] && [[ ! $PITYP == *"Raspberry Pi 5"* ]] ; then
 CPPBIN="pppwn7"
 fi
-echo -e "\n\n\033[36m _____  _____  _____                               
-|  __ \\|  __ \\|  __ \\                    _     _   
-| |__) | |__) | |__) |_      ___ __    _| |_ _| |_ 
-|  ___/|  ___/|  ___/\\ \\ /\\ / / '_ \\  |_   _|_   _|
-| |    | |    | |     \\ V  V /| | | |   |_|   |_|  
-|_|    |_|    |_|      \\_/\\_/ |_| |_|\033[0m
-\n\033[33mhttps://github.com/TheOfficialFloW/PPPwn\nhttps://github.com/xfangfang/PPPwn_cpp\033[0m\n" | sudo tee /dev/tty1
+echo -e "\n\n\033[36m _   _ _____  _____       ______ _    _ _   _ 
+| | | |  __ \/  ___|      | ___ \ |  | | \ | |
+| |_| | |  \/\ \--. ______| |_/ / |  | |  \| |
+|  _  | | __  \--. \______|  __/| |/\| | . | |
+| | | | |_\ \/\__/ /      | |   \  /\  / |\  |
+\_| |_/\____/\____/       \_|    \/  \/\_| \_/\033[0m
+\n\033[33mHERYAN GAMING STORE\033[0m\n" | sudo tee /dev/tty1
 sudo systemctl stop pppoe
 sudo systemctl stop dtlink
 if [ $USBETHERNET = true ] ; then
